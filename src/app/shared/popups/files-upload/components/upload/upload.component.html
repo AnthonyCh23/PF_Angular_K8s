@@ -4,9 +4,8 @@
   <progress class="upload__progress" [value]="(percentage$ | async) || 0" max="100"></progress>
 
   <div class="upload__info" *ngIf="snapshot$ | async as snapshot">
-
     <div>
-      {{snapshot.bytesTransferred}} of {{snapshot.totalBytes}}
+      {{snapshot.bytesTransferred | fileSize}} of {{snapshot.totalBytes | fileSize}}
     </div>
 
     <div>
