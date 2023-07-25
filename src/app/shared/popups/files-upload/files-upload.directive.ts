@@ -29,7 +29,7 @@ export class FilesUploadDirective {
       }
     })
 
-    dialogRef.afterClosed().subscribe(result =>{
+    dialogRef.afterClosed().subscribe(result => {
       this.changed.emit(result || null);
     })
   }
