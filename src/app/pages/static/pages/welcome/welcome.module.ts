@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { WelcomeRoutingModule } from './welcome-routing.module';
 import { WelcomeComponent } from './welcome.component';
+import { MatCardModule } from '@angular/material/card'
+
 
 
 @NgModule({
@@ -11,7 +13,8 @@ import { WelcomeComponent } from './welcome.component';
   ],
   imports: [
     CommonModule,
-    WelcomeRoutingModule
+    WelcomeRoutingModule,
+    MatCardModule
   ]
 })
 export class WelcomeModule { }
